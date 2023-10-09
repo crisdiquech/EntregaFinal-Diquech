@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    height: 100vh;
+}
+body {
+    height: 100%;
+
+    background-color: #282728;
+    position: relative;
+    min-height: 100vh;
+    }
+
+header form {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f8f8;
+}
+
+a:hover {
+    color:#e40647
+}
+
+.nav__buscar:hover {
+    color: #f7f8f8;
+    
+}
+.navbar-logo {
+    height: 60px;
+}
+.container-fluid {
+    background-color: #282728;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0; 
+    margin-bottom: 10px;
+}
+/* .navbar para cambiar color del hover de los link del nav*/
+
+.nav-link  {
+    color: #f7f8f8;
+}
+
+.btn-outline-success {
+    color: #f7f8f8;
+    border-color: #e40647;
+    background-color: #e40647;
+    margin-right: 0rem;  
+}
+
+.me-autob {
+    margin-right: 5px;
+}
+/* .me-2 para modificar margen del form buscar */ 
+
+.img-evento {
+    width: 100%;
+}
+
+.titulos-formularios {
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+    font-size: large;
+}
+
+.seccion__titulos {
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.iconos {
+    height: 20px;
+}
+
+.redes {
+    height: 40px;
+}
+
+.contacto {
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+    text-align: center;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+h3 {
+    font-size: small;
+    color: #f7f8f8;
+    font-family: 'Manjari', sans-serif;
+    text-align: center;  
+}
+
+h2 {
+    font-family: 'Manjari', sans-serif;
+    color:#f7f8f8
+}
+
+.form__texto {
+    font-size: small;
+    color: #f7f8f8;
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+article {
+    display: inline-block;
+}
+
+.seccion__parrafo {
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+    color:#f7f8f8
+}
+
+.seccion__informacion {
+    font-family: 'Manjari', sans-serif;
+    color:rgb(240, 134, 216);
+    font-size: medium;
+    text-align: center;
+}
+
+.formulario__selector {
+    font-family: 'Manjari', sans-serif;
+    color:#f7f8f8;
+    font-size: medium;
+    text-align:center;
+}
+
+.ingresa {
+    color: #f7f8f8;
+    font-family: 'Manjari', sans-serif;    
+}
+
+.registrate { 
+    color: #f7f8f8;
+    font-family: 'Manjari', sans-serif;
+}
+
+.mision-vision {
+     font-family: 'Manjari', sans-serif;
+     color:#f7f8f8;
+     text-align: center;
+}
+
+#datoscompra {
+    color: rgb(47, 160, 141);
+    font-family: 'Manjari', sans-serif;
+}
+
+#eventocompra {
+    color: rgb(47, 160, 141);
+    font-family: 'Manjari', sans-serif;
+}
+
+header {
+    grid-area: header;
+   margin-bottom: 30px;
+}
+
+.registrate {
+    grid-area: registrate;
+}
+
+.servicios {
+    margin-top: 30px;
+}
+
+.form__boton {
+    background-color: #e40647;
+    font-family: 'Manjari', sans-serif;
+    border-radius: 10%;
+    color: #f7f8f8;
+    padding: 5px;
+}
+
+.consulta{
+    background-color: #e40647;
+    font-family: 'Manjari', sans-serif;
+    border-radius: 10%;
+    color: #f7f8f8;
+    padding: 5px;
+}
+
+.informacion {
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+}
+
+.form-contacto {
+    margin-top: 20px; 
+}
+
+form input {
+    border-radius: 10%;
+    padding: 2px;
+}
+
+.footer {
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+}
+
+.footer__pages {
+    margin-left: 20px;
+    grid-area: footer-pages;
+    justify-self:start;
+    align-self: center;
+    font-family: 'Manjari', sans-serif;
+    color: #f7f8f8;
+}
+.footer__social{
+    margin-right: 20px;
+    grid-area: footer-social;
+    justify-self: end;
+    align-self: center;
+}
+
+.footer__derechos { 
+    color: rgb(247, 248, 248);
+    font-family: 'Manjari', sans-serif;
+    justify-self: center;
+    grid-area: footer-derechos;
+    margin-top: 10px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    "footer-pages footer-social"
+    "footer-derechos footer-derechos";
+    grid-area: footer;  
+    align-content: end;
+    position:relative;
+    margin-top: 20px;
+    bottom:0%;
+    width: 100%;
+  }
+
+  .footer__secundario {
+    position: absolute;
+  }

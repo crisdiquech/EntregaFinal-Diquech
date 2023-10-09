@@ -1,0 +1,66 @@
+header form {
+    display: inline-block;
+}
+
+   
+
+
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+article {
+    display: inline-block;
+}
+
+
+.registrate {
+    grid-area: registrate;
+}
+
+.footer__pages {
+    margin-left: 20px;
+    grid-area: footer-pages;
+    justify-self:start;
+    align-self: center;
+}
+
+.footer__social{
+    margin-right: 20px;
+    grid-area: footer-social;
+    justify-self: end;
+    align-self: center;
+}
+
+.footer__derechos { 
+    justify-self: center;
+    grid-area: footer-derechos;
+    margin-top: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    "footer-pages footer-social"
+    "footer-derechos footer-derechos";
+    grid-area: footer;  
+    align-content: end;
+    position:relative;
+    margin-top: 20px;
+    bottom:0%;
+    width: 100%;
+  }
+
+  .footer__secundario {
+    position: absolute;
+  }
+
+  #clima {
+    display: inline-block;
+  }

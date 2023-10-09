@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+$fuente-primaria:'Manjari', sans-serif;
+
+@mixin fonts($font-size, $font-family, $text-aling) {
+    font-size: $font-size;
+    font-family: $font-family;
+    text-align: $text-aling;
+}
+
+
+.titulos-formularios {
+    @include fonts(large, $fuente-primaria, center);
+}
+
+.contacto, .seccion__parrafo, .mision-vision  {
+    @include fonts(large, $fuente-primaria, center);
+}
+
+h3, .form__texto  {
+    @include fonts(small, $fuente-primaria, center);
+    
+}
+
+.seccion__informacion, .formulario__selector {
+    @include fonts(medium, $fuente-primaria, center);
+   
+}
+
+h1, h2, .ingresa, .registrate, .consulta, .informacion, .footer, .footer__derechos, .seccion__titulos, .seccion__titulos--destacado, .seccion__titulos--registrate {
+    font-family: $fuente-primaria;   
+}
+#clima {
+    @include fonts(large, $fuente-primaria, center);
+}
+
+#totalcompra {
+    @include fonts(large, $fuente-primaria, center);
+    font-weight: bolder;
+}
+

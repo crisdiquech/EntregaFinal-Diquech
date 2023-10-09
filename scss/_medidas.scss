@@ -1,0 +1,157 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar-logo {
+    height: 60px;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0; 
+    margin-bottom: 10px;
+}
+
+.img-evento {
+    width: 100%;
+}
+
+.btn-outline-success {
+    margin-right: 0rem;  
+}
+
+.me-autob {
+    margin-right: 5px;
+}
+
+.section__compras {
+    margin-top: 100px;
+}
+@media (max-width:768px) {
+    .section__compras {
+        margin-top: 10px;
+    }
+    
+}
+
+.section__ingresa {
+    margin-top: 100px;
+}
+@media (max-width:768px) {
+    .section__ingresa {
+        margin-top: 10px;
+    }
+    
+}
+
+.section__registrate {
+    margin-top: 100px;
+}
+@media (max-width:768px) {
+    .section__registrate {
+        margin-top: 10px;
+    }
+    
+}
+
+.section__contacto {
+    margin-top: 100px;
+}
+@media (max-width:768px) {
+    .section__contacto {
+        margin-top: 10px;
+    }
+    
+}
+
+.footer__contacto {
+    margin-top: 150px;
+}
+@media (max-width:768px) {
+    .footer__contacto {
+        margin-top: 10px;
+    }
+}
+
+.footer__login {
+    position: absolute;
+}
+@media (max-width:768px) {
+    .footer__login {
+        position: relative;
+        margin-top: 160px;
+    }
+}
+
+.footer__registrate {
+    position: absolute;
+}
+
+@media (max-width:768px) {
+    .footer__registrate {
+     position: relative;
+     margin-top: 220px;
+    }
+}
+    
+
+
+
+.seccion__titulos, .seccion__titulos--destacado, .seccion__titulos--registrate {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion__informacion {
+    margin-top: 20px;
+}
+
+.iconos {
+    height: 20px;
+}
+
+.redes {
+    height: 40px;
+}
+
+.form__texto {
+    margin-bottom: 10px; 
+}
+
+header {
+   margin-bottom: 30px;
+}
+
+.servicios {
+    margin-top: 30px;
+}
+
+.form__boton {
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.consulta{
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.form-contacto {
+    margin-top: 200px; 
+}
+
+form input {
+    border-radius: 10%;
+    padding: 2px;
+}

@@ -1,0 +1,69 @@
+$color-primario: #282728;
+$color-font: #f7f8f8;
+$color-link:#e40647;
+
+
+@keyframes resaltar {
+    0%{ color: #f7f8f8; }
+    25%{color: #e0b0be; }
+    50%{ color: #e16c8f; }
+    75%{ color: #e43066;}
+    100%{ color: #e40647 ;}
+ }
+.seccion__titulos--destacado, .seccion__titulos--registrate {
+    animation-name: resaltar;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+ }
+
+@keyframes primero {
+    15%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    16% {background-image: radial-gradient(ellipse 100px 100px, $color-font,$color-primario);}
+    26% {background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    100%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);} 
+ }
+
+ @keyframes segundo {
+    40%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    41%{background-image: radial-gradient(ellipse 100px 100px, $color-font,$color-primario);}
+    51%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    100%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+ }
+ @keyframes tercero {
+    65%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    66%{background-image: radial-gradient(ellipse 100px 100px, $color-font,$color-primario);}
+    76%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    100%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+
+ }
+ @keyframes cuarto {
+    90%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    91%{background-image: radial-gradient(ellipse 100px 100px, $color-font,$color-primario);}
+    99%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+    100%{background-image: radial-gradient(ellipse 0px 0px, $color-font,$color-primario);}
+ }
+
+.img__servicios--primero {
+    animation-name: primero;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+
+.img__servicios--segundo {
+    @extend .img__servicios--primero;
+    animation-name: segundo;
+ }
+
+ .img__servicios--tercero {
+    @extend .img__servicios--primero;
+    animation-name: tercero;
+ }
+
+ .img__servicios--cuarto {
+    @extend .img__servicios--primero;
+    animation-name: cuarto;
+ }
+
+
